@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color : #fff;
+  background-color :rgb(239, 242, 245);
+}
+
+.header {
+  height: 123vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/Photos/mainBackground.png);
+  background-position: center;
+  background-size: cover;
+  position : relative;
+}
+
+.navbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto;
+  padding: 20px 8vw;
+}
+
+.navbar__logo {
+  width : 130px;
+  min-width: 130px;
+}
+
+.navbar__logo img {
+  width: 100%;
+}
+
+.navbar__navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.navbar__navlinks li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.hero{
+  height : 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10vw;
+}
+
+.hero h1{
+  font-size: 4rem;
+}
+
+.hero p{
+  font-size: 1.1rem;
+  display: inline-block; 
+  width: calc(50% - 200px);
+  min-width: 400px;
+  margin : 30px 0;
+  font-weight: 400;
+}
+
+.hero button{
+  color : rgba(255, 255, 255, 0.8);
+  background-color: #6663e9;
+  padding : 13px 28px;
+  font-weight : 600;
+  letter-spacing: 1px;
+  border : none;
+  border-radius: 18px;
+}
+
+.brand__logos{
+  width : 95%;
+  padding : 50px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px;
+  background-color: #fff;
+  position : relative;
+  bottom : 80px;
+  margin : 0 auto;
+}
+
+.estate__card-wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap : 100px 40px;
+  padding : 0 100px;
+}
+
+.estate__heading{
+  color : rgba(0, 0, 0, 1);
+  font-size : 4rem;
+  text-align: center;
+  margin-bottom : 100px;
+}
+
+.card-wrapper{
+  position : relative;
+  display : inline-block
+}
+
+.card{
+  width : 350px;
+  height : 400px;
+  border-radius: 15px;
+}
+
+.card img{
+  width : 100%;
+  height : 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.card__description{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding : 20px 0;
+  position : absolute;
+  background-color: #fff;
+  width : 300px;
+  color : black;
+  border-radius: 15px;
+  bottom : 0px;
+  left : 50%;
+  transform: translate(-50% , 50%)
+}
+
+.card__description h2{
+  font-size: 1.7rem;
+}
+
+.card__description p{
+  color : #6663e8;
+  font-weight: 600;
+}
+
+.card__description button{
+  background-color: #6663e9;
+  padding : 15px 25px;
+  border-radius: 20px;
+  border : none;
+  color : #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.early-bird{
+  padding : 300px 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color : black;
+}
+
+.image-wrapper{
+  width : 500px;
+  position : relative;
+}
+
+.early-bird img{
+  width : 100%;
+  transform : rotateY(180deg)
+}
+
+.early-bird-img{
+  width : 362px;
+  height : 362px;
+  object-fit: cover;
+  object-position: center;
+  position : absolute;
+  left : 95px;
+  bottom : 100px;
+  border-radius: 30px;
+}
+
+.early-bird-img img{
+  border-radius: 30px;
+  width : 100%;
+  height : 100%;
+}
+
+.early-bird-right{
+  width : 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position : relative;
+  bottom : 50px;
+  gap : 20px;
+}
+
+.early-bird-right h1{
+  font-size: 4rem;
+}
+
+.early-bird-right button{
+  padding : 13px 22px;
+  border-radius: 20px;
+  background-color: #6663e9;
+  color : white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border : none;
+}
+
+.early-bird-right p{
+  color : rgba(0, 0, 0, 0.7)
+}
+
+.unique-house{
+  display: flex;
+  justify-content: space-between;
+  color : black;
+  padding : 20px 0;
+}
+
+.unique-house-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap : 40px;
+  max-width: 50%;
+  padding : 40px;
+}
+
+.unique-house-left h1{
+  font-size: 4rem;
+}
+
+.unique-house-left button{
+  padding : 12px 25px;
+  background-color: #6663e9;
+  color : white;
+  font-weight: 600;
+  border :none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+}
+
+.unique-img-wrapper{
+  position : relative;
+  width : 600px;
+}
+
+.unique-img-wrapper img{
+  width : 100%;
+}
+
+.main-unique-img{
+  position : absolute;
+  right : 115px;
+  bottom : 125px;
+  width : 434px;
+  height : 434px;
+  border-radius: 20px;
+}
+
+.main-unique-img img{
+  width : 100%;
+  height : 100%;
+  border-radius: 20px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.newsletter-wrapper{
+  width : 100%;
+}
+
+.newsletter{
+  width : 90%;
+  background-color: #6663e8;
+  height : 450px;
+  border-radius: 80px;
+  margin : 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap : 30px;
+
+}
+
+.newsletter h1{
+  font-size: 3.5rem;
+  width : 870px;
+  text-align: center;
+}
+
+.newsletter p{
+  width : 800px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.email-input{
+  display: flex;
+}
+
+.notification{
+  display: flex;
+}
+
+.email-box{
+  width : 500px;
+  padding : 17px 40px;
+  border-radius: 40px;
+  gap : 20px;
+  background-color: #5654d1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.notification{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap : 30px;
+}
+
+.notification button{
+  padding : 19px 45px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  color :  #5654d1;
+  font-weight: 700;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.email-box input{
+  background-color: transparent;
+  border : none;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding : 100px 100px 50px 100px;
+  color : black;
+}
+
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  gap : 20px;
+}
+
+.footer-left p{
+  font-size: 1.1rem;
+  font-weight: 400;
+  max-width: 350px;
+}
+
+.social-links{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap : 20px;
+
+}
+
+.footer-right{
+  display: flex;
+  gap : 100px;
+}
+
+.location , .contact , .legals{
+  display: flex;
+  flex-direction: column;
+  gap : 30px;
+  font-weight: 300;
+}
